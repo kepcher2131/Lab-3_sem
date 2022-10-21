@@ -4,26 +4,26 @@ from numpy import linalg
 sz = int(input('Введите размерность квадратной матрицы больше 1 и меньше 31:'))
 while (sz < 1) or (sz > 31):
     sz = int(input("\nВы ввели неверное число. \nВведите размерность квадратной матрицы больше 1 и меньше 31:"))
+
 x = np.random.randint(5, size=(sz, sz))
-r = np.linalg.matrix_rank(x)
+rank = np.linalg.matrix_rank(x)
 print("Матрица:\n", x)
-print("Ранг матрицы:", r)
+print("Ранг матрицы:", rank)
+
 t = int(input('\nВведите количество знаков после запятой в результате вычисления:'))
-t = 0.1 ** t
-n = 1
-znam = 1
-summa = 0
-fg = 0
-out = 1
-print()
-while abs(out) > t:
+
+n, fact, znam, out = 1, 1, 1, 1
+summa, fg = 0, 0
+print(t ,' ',np.linalg.det(x))
+while abs(out) > pow(0.1, t):
     fg += summa
-    summa += (np.linalg.det(abs(x * znam))) / znam
+    fact = n
+    summa += (np.linalg.det(abs(x * fact))) / znam
     n += 1
-    znam = np.math.factorial(n)
+    znam *= (n-1) * n
     out = abs(fg-summa)
     fg = 0
     print(n-1, ':', summa, ' ', out)
-print('Сумма знакопеременного ряда:', summa)
 
+print("Сумма знакопеременного ряда: ",summa)
 
