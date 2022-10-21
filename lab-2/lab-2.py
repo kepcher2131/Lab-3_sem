@@ -5,7 +5,7 @@ sz = int(input('Введите размерность квадратной ма�
 while (sz < 1) or (sz > 31):
     sz = int(input("\nВы ввели неверное число. \nВведите размерность квадратной матрицы больше 1 и меньше 31:"))
 
-x = np.random.randint(5, size=(sz, sz))
+x = np.random.randint(10, size=(sz, sz))
 rank = np.linalg.matrix_rank(x)
 print("Матрица:\n", x)
 print("Ранг матрицы:", rank)
@@ -14,7 +14,7 @@ t = int(input('\nВведите количество знаков после з�
 
 n, fact, znam, out = 1, 1, 1, 1
 summa, fg = 0, 0
-print(t ,' ',np.linalg.det(x))
+print()
 while abs(out) > pow(0.1, t):
     fg += summa
     fact = n
