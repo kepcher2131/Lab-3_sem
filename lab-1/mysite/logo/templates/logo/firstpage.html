@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'logo/css/firstpage.css' %}">
+    <title>LOGO-Design</title>
+</head>
+<body class="body">
+    <div class="header">
+        <div class="header_section">
+            <div class="header_logo">
+                <a href="https://github.com/kepcher2131" class="header_item_0"><img src="{% static 'logo/images/logo.png' %}" class="imglogo" ></a>
+            </div>
+            <ul class="header_item">
+                <li><a href="https://discordapp.com/users/526791869103865886/" class="header_item_1"><img src="{% static 'logo/images/Dc.png' %}" class="header_contact"></a></li>
+                <li><a href="https://t.me/cherepaha2x2/" class="header_item_2"><img src="{% static 'logo/images/Tg.png' %}" class="header_contact"></a></li>
+                <li><a href="https://vk.com/why_pashka/" class="header_item_3"><img src="{% static 'logo/images/Vk.png' %}" class="header_contact"></a></li>
+                <li><a href="https://ru.pinterest.com/Kepcherxr/" class="header_item_4"><img src="{% static 'logo/images/Pin.png' %}" class="header_contact"></a></li>
+            </ul>
+        </div>
+    </div class="header">
+    
+    <div class="main">
+        <div class="right">
+            <h1>Дизайн логотипов и мини-слоганов</h1>
+            <ul class="items">
+                <li><a>Проанализируем Ваш бизнес и составим подробный план привлечения клиентов и продвижения бренда</a></li>
+                <li><a>Разработаем индивидуальный логотип и фирменный стиль.</a></li>
+                <li><a>Разработаем концепцию съемки, организуем весь процесс и создадим очень крутой контент</a></li>
+            </ul>
+            <div class="button">
+                <a href="/contact" class="butt">Заказать Дизайн</a>
+            </div>
+            <div class="contacts">
+                <h2>
+                    {% block content %}
+                    {% endblock %}
+                </h2>
+            </div>
+        </div>
+        <div class="left">
+            <ul class="images_items">
+                <li><p class="hidden"><img src="{% static 'logo/images/frontline.png' %}" class="images" ></p>
+                    <p class="hidden"><img src="{% static 'logo/images/poisonous.png' %}" class="images"></p>
+                    <p class="hidden"><img src="{% static 'logo/images/mrwood.jpg' %}" class="images"></p></li>
+                <li><p class="hidden"><img src="{% static 'logo/images/capital.jpg' %}" class="images"></p>
+                    <p class="hidden"><img src="{% static 'logo/images/slylist.jpg' %}" class="images"></p>
+                    <p class="hidden"><img src="{% static 'logo/images/esamedia.jpg' %}" class="images"></p></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

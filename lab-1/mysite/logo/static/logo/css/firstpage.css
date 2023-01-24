@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(70deg, rgb(223, 145, 0), #161b21)
+}
+.header {
+    display: flex;
+    height: 70px;
+    background: #161b21;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.header_section{
+    display: flex;
+    align-items: center;
+}
+.header_logo{
+    padding-left: 200px;
+    padding-right: 400px;
+}
+.header_item{
+    display: flex;
+    list-style-type: none;
+}
+.header_contact{
+    width: 50px;
+    height: 50px;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.imglogo {
+    float: left;
+    width: 200px;
+    padding-left: 100px;
+  }
+  .header_item_0:hover img{
+    transform: scale(1.1);
+}
+.header_item_1:hover img{
+    transform: scale(1.1);
+}
+.header_item_2:hover img{
+    transform: scale(1.1);
+}
+.header_item_3:hover img{
+    transform: scale(1.1);
+}
+.header_item_4:hover img{
+    transform: scale(1.1);
+}
+.right{
+    padding-top: 20px;
+    padding-left: 200px;
+    width: 355px;
+    height: 655px;
+    float: left;
+    padding-right: 50px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.items{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding-bottom: 20px;
+}
+.butt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(211, 127, 0);
+}
+.button{
+    height: 30px;
+    width: 200px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    background-color: #161b21;
+    border-radius: 10px;
+}
+.button:hover{
+    height: 30px;
+    width: 200px;
+    background-color: #001fac;
+    
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.left{
+    padding-top: 10px;
+}
+.images_items{
+    display: flex;
+    list-style-type: none;
+    padding-left: 50px;
+}
+.images{
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.images:hover{
+    transform: scale(1.3);
+    
+}
+.hidden img {
+    overflow: hidden;
+    transition: transform 0.5s;
+}
